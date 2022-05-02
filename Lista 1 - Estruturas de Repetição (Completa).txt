@@ -1,0 +1,660 @@
+/////Lista 1 - Estruturas de Repetição
+
+///Primeira Questão
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    float pesoCaixa, pesoTotal;
+
+    pesoTotal = 0;
+    
+    int i = 1;
+    while(i<=25){
+    printf ("Insira o peso da caixa %d: ", i);
+    scanf("%f", &pesoCaixa);
+    pesoTotal = pesoTotal+pesoCaixa;
+    printf("\n");
+    i++;
+    }
+
+    printf("\n");
+    printf ("O peso total eh: %.1f", pesoTotal);
+    printf("\n");
+
+    
+}
+
+
+
+///Segunda Questão
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int quantidade;
+    float preco, totalGastos;
+
+    totalGastos = 0;
+    
+    int i = 1;
+    while(i<=45){
+      printf ("Insira a quantidade do produto %d: ", i);
+      scanf("%d", &quantidade);
+      printf("\n");
+      printf ("Insira o preco do produto %d: ", i);
+      scanf("%f", &preco);
+      printf("\n");
+      totalGastos += quantidade*preco; 
+      i++;
+    }
+
+    printf("\n");
+    printf ("O preco total eh: %.1f", totalGastos);
+    printf("\n");
+}
+
+
+
+///Terceira Questão
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int quantidadeHoras, quantidadeHorasTotal;
+
+    quantidadeHorasTotal = 0;
+    
+    int i = 1;
+    while(i<=30){
+      printf ("Insira a quantidade de horas trabalhadas no dia %d: ", i);
+      scanf("%d", &quantidadeHoras);
+      printf("\n");
+      quantidadeHorasTotal += quantidadeHoras; 
+      i++;
+    }
+
+    printf("\n");
+    printf ("A quantidade total de horas trabalhadas no mes eh: %d", quantidadeHorasTotal);
+    printf("\n");
+}
+
+
+///Quarta Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int idade, quantidadePessoasMaiores;
+
+    quantidadePessoasMaiores = 0;
+    
+    int i = 1;
+    while(i<=10){
+      printf ("Insira a idade da pessoa %d: ", i);
+      scanf("%d", &idade);
+      printf("\n");
+      if(idade>=18){
+        quantidadePessoasMaiores++;
+      }
+      printf("\n");
+      i++;
+    }
+
+    printf("\n");
+    printf ("A quantidade pessoas maiores de 18 anos eh: %d", quantidadePessoasMaiores);
+    printf("\n");
+}
+
+
+///Quinta Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int quantidadeHoras, quantidadeHorasTotal;
+    float salarioBruto=0;
+
+    quantidadeHorasTotal = 0;
+    
+    int i = 1;
+    while(i<=30){
+      printf ("Insira a quantidade de horas trabalhadas no dia %d: ", i);
+      scanf("%d", &quantidadeHoras);
+      printf("\n");
+      quantidadeHorasTotal += quantidadeHoras; 
+      i++;
+    }
+
+    salarioBruto = quantidadeHorasTotal*10;
+  
+    printf("\n");
+    printf ("O salario bruto do funcionario eh: %.1f", salarioBruto);
+    printf("\n");
+}
+
+
+
+
+///Sexta Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    float temperaturaCelsius, mediaTemperatura;
+    
+    int i = 1;
+    while(i<=50){
+      temperaturaCelsius = (0.55555555555555555555555555555556)*(i-32);  
+      mediaTemperatura = (i+temperaturaCelsius)/2;
+      printf ("A temperatura %d em Fahrenheit corresponde a %.1f°C, a media entre as duas temperaturas eh: %.1f", i, temperaturaCelsius, mediaTemperatura);
+      printf("\n");          
+      printf("\n");         
+      i++;
+    }    
+}
+
+
+
+
+
+///Setima Questão
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int numeros=0, quantidade=0, soma=0;
+    float media=0;
+    
+     while(numeros>=0){
+      printf("Digite um numero inteiro e positivo: ");
+      scanf("%d", &numeros);
+      printf("\n");
+      printf("\n");
+      if(numeros>=0){
+        soma+=numeros;
+        quantidade++;
+      }   
+    } 
+    media = (float)soma/quantidade;
+
+    printf("\n");
+    printf("A soma dos numeros eh %d e a media dos numeros eh %.2f", soma, media);
+}
+
+
+///Oitava Questão
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int idade=1, quantidade=0, altura, somaAltura=0;
+    float media=0;
+    
+    while(idade>0){
+      printf("Insira a sua idade: ");
+      scanf("%d", &idade);
+      printf("\n");
+      printf("Insira a sua altura (em centimetros): ");
+      scanf("%d", &altura);
+      printf("\n");
+      if(idade>50){
+        somaAltura+=altura;
+        quantidade++;
+      }   
+    }
+  
+    media = (float)somaAltura/quantidade;
+
+    printf("\n");
+    printf("A media das Alturas eh %.2f", media);
+}
+
+
+
+
+///Noca Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int numeros, somaPares=0;
+    int i=0;  
+    while(i<10){
+      printf("Digite um numero inteiro e positivo: ");
+      scanf("%d", &numeros);
+      printf("\n");
+      if(numeros%2==0 && numeros>4){
+        somaPares+=numeros;
+      }
+      i++;
+    } 
+  
+    printf("\n");
+    printf("\n");
+    printf("A soma dos numeros pares e maiores que 4 eh %d", somaPares);
+}
+
+
+
+///Decima Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    float base, altura, area;
+
+    printf("Digite a Base do triangulo: ");
+    scanf("%f", &base);
+    printf("\n");
+    printf("Digite a Altura do triangulo: ");
+    scanf("%f", &altura);
+    printf("\n");
+    if(base>0 && altura>0){
+      area = (base*altura)/2;
+      printf("A Area do Triangulo eh %.2f", area);
+    }
+    else{
+      printf("Medida invalida, digite valores maiores que 0");
+    }
+}
+
+
+
+///Decima Primeira Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int idade, altura, alturaPessoas10e20=0, quantPessoas50=0, quantPessoas10e20=0, quantPessoasPesoMenor40=0;
+    float peso, mediaAltura, porcentagemPessoasMenos40;
+
+    int i = 1;
+    while(i<=15){
+      printf("Digite a idade da pessoa %d: ", i);
+      scanf("%d", &idade);
+      printf("\n");
+      printf("Digite a Altura (em centimetros) da pessoa %d: ", i);
+      scanf("%d", &altura);
+      printf("\n");
+      printf("Digite o peso (em kg) da pessoa %d: ", i);
+      scanf("%f", &peso);
+      printf("\n");
+
+      if(idade>50){
+        quantPessoas50++;  
+      }
+
+      if(idade>=10 && idade<=20){
+        quantPessoas10e20++;
+        alturaPessoas10e20+=altura;
+      }
+
+      if(peso<40){
+        quantPessoasPesoMenor40++;
+      }
+      
+      i++;
+    }
+
+    
+    mediaAltura = (float)alturaPessoas10e20/quantPessoas10e20;
+
+    porcentagemPessoasMenos40 = (float)(quantPessoasPesoMenor40*100)/15;
+
+  printf("\n");
+  printf("\n");
+
+  printf("Quantidade de pessoas com idade superior a 50 anos: %d \n", quantPessoas50);
+  printf("\n");
+  printf("A média das alturas das pessoas com idade entre 10 e 20 anos: %.2f \n", mediaAltura);
+  printf("\n");
+  printf("A porcentagem de pessoas com peso inferior a 40 quilos entre todas as pessoas analisadas: %.2f%% \n", porcentagemPessoasMenos40);
+}
+
+
+
+
+///Decima Segunda Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int numero=1;
+  
+    while(numero>0 && numero!=1000){
+      printf("Digite um numero: ");
+      scanf("%d", &numero);
+      printf("\n");
+      if(numero>0 && numero!=1000){
+        if(numero%2==0){
+          printf("\n");
+          printf("O numero %d eh par \n", numero); 
+          printf("\n");
+        }
+        else{
+          printf("\n");
+          printf("O numero %d eh impar \n", numero); 
+          printf("\n");
+        }
+      }
+    }  
+}
+
+
+
+///Decima Terceira Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int horasTrabalhadas, opcao=1;
+    float valorHorasTrabalhadas, salarioBruto, inss, impostoRenda, salarioLiquido;
+  
+    while(opcao==1){
+      printf("Digite a quantidade de horas trabalhadas: ");
+      scanf("%d", &horasTrabalhadas);
+      printf("\n");
+      printf("\n");
+      printf("Digite o valor da hora trabalhada: ");
+      scanf("%f", &valorHorasTrabalhadas);
+      printf("\n");
+
+      salarioBruto = horasTrabalhadas*valorHorasTrabalhadas;
+
+      inss = 0.11*salarioBruto;
+        
+      salarioLiquido = salarioBruto - inss;
+
+      if(salarioBruto>=900 && salarioBruto<=1800){
+        salarioLiquido = salarioLiquido-135;
+      }
+      if(salarioBruto>1800){
+        salarioLiquido = salarioLiquido-360;
+      }
+
+      printf("\n");
+      printf("O salario Liquido do Funcionario eh %.2f: ", salarioLiquido);
+      printf("\n");
+      printf("\n");
+
+      printf("Deseja inserir outro funcionario? Digite 1 para sim e qualquer outro numero para nao, Escolha a opcao: ");
+      scanf("%d", &opcao);
+      printf("\n");
+      printf("\n");  
+    } 
+}
+
+
+
+
+///Decima Quarta Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int quantidadeProduto, opcao=1;
+    float precoEtiqueta, valorCompraAtual, desconto, valorCompraTotal=0;
+  
+    while(opcao==1){
+      printf("Digite o preco da etiqueta do produto: ");
+      scanf("%f", &precoEtiqueta);
+      printf("\n");
+      printf("Digite a quantidade do Produto escolhido: ");
+      scanf("%d", &quantidadeProduto);
+      printf("\n");
+      printf("\n");
+
+      valorCompraAtual = precoEtiqueta*quantidadeProduto;
+      valorCompraTotal+= valorCompraAtual;
+
+      printf("Deseja encerrar a compra?\n");
+      printf("Digite 1 para continuar comprando e qualquer outro numero para encerrar\n");
+      printf("Insira a opcao: ");
+      scanf("%d", &opcao);
+      printf("\n");
+      printf("\n");  
+    } 
+
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    printf("Opcoes de Pagamento\n");
+    printf("\n");
+    printf("Digite 1 para A vista em dinheiro ou cheque, com 10%% de desconto\n");
+    printf("\n");
+    printf("Digite 2 para A vista com cartao de credito, com 5%% de desconto\n");
+    printf("\n");
+    printf("Digite 3 para Em 2 vezes, preco normal de etiqueta sem juros\n");
+    printf("\n");
+    printf("Digite 4 para Em 3 vezes, preco de etiqueta com acrescimo de 10%%\n");
+    printf("\n");
+    printf("\n");
+    printf("Digite a opcao desejada: ");
+    scanf("%d", &opcao);
+    printf("\n");
+    printf("\n");
+
+    if(opcao==1){
+      desconto = valorCompraTotal*0.1;
+      valorCompraTotal = valorCompraTotal-desconto;
+      printf("O valor da compra sai por: %.2f", valorCompraTotal); 
+    }
+    if(opcao==2){
+      desconto = valorCompraTotal*0.05;
+      valorCompraTotal = valorCompraTotal-desconto;
+      printf("O valor da compra sai por: %.2f", valorCompraTotal); 
+    }
+    if(opcao==3){
+      valorCompraTotal = valorCompraTotal/2;
+      printf("O valor da compra sai por 2 parcelas de: %.2f", valorCompraTotal);  
+    }
+    if(opcao==4){
+      desconto = valorCompraTotal*0.1;
+      valorCompraTotal = valorCompraTotal+desconto;
+      valorCompraTotal = valorCompraTotal/3;
+      printf("O valor da compra sai por 3 parcelas de: %.2f", valorCompraTotal);  
+    }
+}
+
+
+
+
+///Decima Quinta Questão
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    float salario=1, novoSalario, reajuste, reajusteTotal=0;
+  
+    while(salario>0){
+      printf("Digite o seu salario: ");
+      scanf("%f", &salario);
+      printf("\n");
+      printf("\n");
+
+      if(salario>0){
+        if(salario<500){
+          reajuste = 0.15*salario;
+          novoSalario = salario+reajuste;
+        }
+        if(salario>=500 && salario<=1000){
+          reajuste = 0.10*salario;
+          novoSalario = salario+reajuste;  
+        }
+        if(salario>1000){
+          reajuste = 0.05*salario;
+          novoSalario = salario+reajuste;  
+        }
+
+        reajusteTotal+=reajuste;
+        printf("\n");
+        printf("\n");
+        printf("O novo salario do funcionario eh: %.2f\n", novoSalario);
+        printf("\n");
+        printf("\n");
+      }
+    } 
+
+    printf("\n");
+    printf("\n");
+    printf("A empresa gastara %.2f com todos os reajustes de salario", reajusteTotal);
+}
+
+
+
+
+///Decima Sexta Questão
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int horaentrada, minutoEntrada, horaSaida, minutoSaida, transformaEntradaMinutos, transformaSaidaMinutos, resultado, valor;
+  
+    
+      printf("Digite a hora de entrada: ");
+      scanf("%d", &horaentrada);
+      printf("\n");
+      printf("Digite o minuto de entrada: ");
+      scanf("%d", &minutoEntrada);
+      printf("\n");
+      printf("Digite a hora de saida: ");
+      scanf("%d", &horaSaida);
+      printf("\n");
+      printf("Digite o minuto de saida: ");
+      scanf("%d", &minutoSaida);
+      printf("\n");
+      printf("\n");
+      printf("\n");
+      printf("\n");
+
+  
+      transformaEntradaMinutos = (horaentrada*60)+minutoEntrada;
+      transformaSaidaMinutos = (horaSaida*60)+minutoSaida;
+
+      resultado = transformaSaidaMinutos-transformaEntradaMinutos;
+
+      if(resultado/60==1){
+        printf("O valor a pagar eh 4 reais \n");  
+      }
+      else if(resultado/120==1){
+        printf("O valor a pagar eh 6 reais \n");  
+      }
+      else{
+        if(resultado%60==0){
+          resultado = resultado/60;
+          resultado = resultado-2;
+          valor = 6;
+          valor = valor+resultado;
+          printf("O valor a pagar eh %d \n", valor);  
+        }
+      }
+
+  
+   
+}
+
+
+///Decima Setima Questão
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    char estado;
+    int casado=0, solteiro=0, viuvo=0, desquitado=0, idade, somaIdade=0;
+    float mediaIdade=0, porcentagemSeparados;
+    
+     
+      int i = 1;
+      while(i<=20){
+        printf("Digite C - casado, S - solteiro, V - viúvo e D – desquitado ou separado)");
+        printf("\n");
+        printf("\n");
+        printf("Digite a idade da pessoa %d: ", i);
+        scanf("%d", &idade);
+        printf("\n");
+        printf("\n");
+        printf("Digite o estado civil da pessoa %d: ", i);
+        scanf(" %c", &estado);
+        printf("\n");
+        printf("\n");
+
+        if(estado=='C'){
+          casado++;
+        }
+        else if(estado=='S'){
+          solteiro++;
+        }
+        else if(estado=='V'){
+          somaIdade+=idade;
+          viuvo++;
+        }
+        else if(estado=='D'){
+          desquitado++;
+        } 
+        i++;
+      }
+
+      mediaIdade = (float)somaIdade/viuvo;
+
+      porcentagemSeparados = (float)(desquitado*100)/20;
+
+      printf("Quantidade de pessoas Casadas: %d \n", casado);
+      printf("Quantidade de pessoas Solteiras: %d \n", solteiro);
+      printf("A media da Idade pessoas Viuvas: %.2f \n", mediaIdade);
+      printf("A porcentagem de pessoas Desquitadas em relacao ao total: %.2f \n",porcentagemSeparados);
+    
+
+  
+    
+  
+   
+}
